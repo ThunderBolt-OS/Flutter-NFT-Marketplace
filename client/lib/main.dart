@@ -3,8 +3,10 @@ import 'package:client/bindings/main_screen_binding.dart';
 import 'package:client/bindings/nft_binding.dart';
 import 'package:client/bindings/wallet_binding.dart';
 import 'package:client/bindings/welcome_binding.dart';
+import 'package:client/firebase_options.dart';
 import 'package:client/routes.dart';
 import 'package:client/themes/app_themes.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -14,6 +16,7 @@ List<CameraDescription> cameras = [];
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   loadDependencies();
   // await loadServices();
   await GetStorage.init();

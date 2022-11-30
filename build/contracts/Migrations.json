@@ -1457,8 +1457,8 @@
       "transactionHash": "0x86ee2986c7965f57bcc60d895a8d14cd65b22072b4a999d74cc547c64e952bb7"
     }
   },
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-11-19T05:27:11.636Z",
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-11-27T12:53:51.460Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
